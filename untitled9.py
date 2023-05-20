@@ -30,15 +30,3 @@ plt.ylim(bottom = 0)
 plt.xlim(left = 0)
 plt.legend(loc='upper right', fontsize=27, title='Движение тела')
 plt.grid(True)
-
-H = float(input ('H = '))
-V = float(input('V = '))
-T = float(input('T = '))
-M = 32 * 10**(-3)
-p0 = 10**5
-R = 8.31
-g = 9.81
-k = 1.38 * 10**(-23)
-p = p0 * math.exp(-(M* g * H) / (R * T))
-N = (p * V) / (k * T)
-print("p =", p, "N =", N)
