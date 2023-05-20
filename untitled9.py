@@ -12,11 +12,11 @@ class Fall(object):
     self.__h0 = h0
     self.__v0 = v0
   def y(self, t):
-    return self.__h0 + self.__v0* np.sin(Fall.alpha) * t - (Fall.g * (t**2))/2
+    return self.__h0 - self.__v0* np.sin(Fall.alpha) * t - (Fall.g * (t**2))/2
   def x(self, t):
     return self.__v0 * np.cos(Fall.alpha) * t
   def max_time(self):
-    return (2 * (np.sqrt(2 * self.__h0 / Fall.g))) + ((self.__v0 * np.sin(Fall.alpha)) / Fall.g)
+    return (2 * (np.sqrt(2 * self.__h0 / Fall.g))) - ((self.__v0 * np.sin(Fall.alpha)) / Fall.g)
 
 fall = Fall(h0, v0)
 t_max = fall.max_time()
