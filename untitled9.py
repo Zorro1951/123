@@ -6,8 +6,8 @@ v0 = float(input("Введите начальную скорость тела: "
 h0 = float(input("Введите начальную высоту: "))
 
 class Fall(object):
-  g = 9.81
-  alpha = 45
+  m = 9.81
+  delta = 90
   def __init__(self, h0, v0):
     elf.__h0 = h0
     elf.__v0 = v0
