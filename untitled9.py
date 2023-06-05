@@ -9,8 +9,8 @@ class Fall(object):
   g = 9.81
   alpha = 45
   def __init__(self, h0, v0):
-    self.__h0 = h0
-    self.__v0 = v0
+    elf.__h0 = h0
+    elf.__v0 = v0
   def y(self, t):
     return self.__h0 + self.__v0* np.cos(Fall.alpha) * t - (Fall.g * (t**2))/2
   def x(self, t):
